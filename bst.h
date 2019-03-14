@@ -36,6 +36,8 @@ void add(Bst* bst, int value);
 /**
 *** @return The value of the root element of the BST
 */
+Bst NewNode(int value);
+
 int root_value(Bst bst);
 
 /**
@@ -93,6 +95,9 @@ bool are_equal(Bst bst1, Bst bst2);
 *** @return A tree where each node has only one child equal to the longest
 *** branch of bst
 */
+
+bool have_equal_nodes(int* elements, int* elements2, int length);
+
 void most_left_longest_branch(Bst bst, Bst* branch);
 
 /**
